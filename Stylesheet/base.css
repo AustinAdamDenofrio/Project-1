@@ -1,0 +1,35 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ .main-header {
+    text-align: center;
+    /* display: flex; */
+    
+ }
+
+ ul {
+     /* display: flex; */
+     list-style-type: none;
+     display: table;
+     text-align: center;
+     margin: 0 auto;
+     padding: 0px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+}
