@@ -5,8 +5,7 @@
 
  .main-header {
     text-align: center;
-    /* display: flex; */
-    background-color: rgb(136, 119, 53);
+    background-color: rgb(87, 78, 41);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 8px;
@@ -14,31 +13,32 @@
     border-radius: 5%;
     background-image:url(../img/mountains-crop2.png);
     max-width: 100%;
-    max-height: auto;
-    background-repeat: no-repeat;
+    min-height: 265px;
     border: 10px solid rgb(136, 119, 53);
-     }
+ }
 
  #header-background {
     background-image:url(../img/mountains-crop2.png);
     max-width: 100%;
     max-height: auto;
     background-repeat: no-repeat;
-    border: 10px solid rgb(136, 119, 53);
+    border-top: 10px solid rgb(150, 136, 80);
+    border-left: 10px solid rgb(136, 119, 53);
+    border-right: 10px solid rgb(136, 119, 53);
+    border-bottom: 5px solid rgba(45, 49, 22, 0.315); 
  }
 
- .logo {
-  margin-top: 25px;
+ .main-header-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
  }
 
  ul {
-     /* display: flex; */
      list-style-type: none;
      display: table;
      text-align: center;
      margin: 0 auto;
      padding: 9px;
-     margin-bottom: 20px;
      background-color: rgb(36, 88, 36);
      border-radius: 5%;
 
