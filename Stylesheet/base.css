@@ -6,22 +6,19 @@
  .main-header {
     text-align: center;
     background-color: rgb(87, 78, 41);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 8px;
-    margin-right: 8px; 
+    margin: 20px 8px;
+    margin: auto;
     border-radius: 5%;
     background-image:url(../img/mountains-crop2.png);
+    width: 1276px;
     max-width: 100%;
-    min-height: 265px;
+    min-height: 285px;
     border: 10px solid rgb(136, 119, 53);
  }
 
  #header-background {
-    background-image:url(../img/mountains-crop2.png);
     max-width: 100%;
     max-height: auto;
-    background-repeat: no-repeat;
     border-top: 10px solid rgb(150, 136, 80);
     border-left: 10px solid rgb(136, 119, 53);
     border-right: 10px solid rgb(136, 119, 53);
@@ -29,19 +26,18 @@
  }
 
  .main-header-container {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 17px;
  }
 
+ 
  ul {
      list-style-type: none;
-     display: table;
      text-align: center;
      margin: 0 auto;
      padding: 9px;
      background-color: rgb(36, 88, 36);
      border-radius: 5%;
-
+     display: table;
  }
 
 li .about-us {
@@ -64,6 +60,9 @@ li
 }
 
 
+/* you could set a max width header than when the browser
+ gets too wide sex the media 
+quiries to have a full screan background image. */
 
 
 
@@ -76,6 +75,17 @@ li
 
 
 
+@media (min-width: 630px) {
+    .main-header,
+    .main-header-container {
+        display: flex;
+        margin: auto;
+    }
 
-@media (min-width: 700px) {
+    .main-header-container {
+        flex-direction: column;
+    }
+
+
+
 }
