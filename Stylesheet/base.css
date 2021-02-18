@@ -4,60 +4,13 @@
  }
 
  .main-header {
-    text-align: center;
-    background-color: rgb(87, 78, 41);
-    margin: 20px 8px;
-    margin: auto;
-    border-radius: 5%;
-    background-image:url(../img/mountains-crop2.png);
-    width: 1276px;
-    max-width: 100%;
-    min-height: 285px;
-    border: 10px solid rgb(136, 119, 53);
- }
-
- #header-background {
-    max-width: 100%;
-    max-height: auto;
-    border-top: 10px solid rgb(150, 136, 80);
-    border-left: 10px solid rgb(136, 119, 53);
-    border-right: 10px solid rgb(136, 119, 53);
-    border-bottom: 5px solid rgba(45, 49, 22, 0.315); 
+    background-color: rgb(87, 78, 41);        
  }
 
  .main-header-container {
     margin: 17px;
  }
 
- 
- ul {
-     list-style-type: none;
-     text-align: center;
-     margin: 0 auto;
-     padding: 9px;
-     background-color: rgb(36, 88, 36);
-     border-radius: 5%;
-     display: table;
- }
-
-li .about-us {
-    font-size: 20px;
-    text-decoration: none;
-    color: burlywood;
-   
-}
-
-li 
-.stories,
-.destinations,
-.our-vehicle {
-    font-size: 18px;
-    color: rgb(223, 167, 94);
-}
-
-.main-nav-bar a {
-    text-decoration: none;
-}
 
 
 /* you could set a max width header than when the browser
@@ -65,27 +18,12 @@ li
 quiries to have a full screan background image. */
 
 
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 630px) {
     .main-header,
-    .main-header-container {
+    .main-nav-bar,
+    .page-name,
+    .logo {
         display: flex;
         margin: auto;
     }
 
-    .main-header-container {
-        flex-direction: column;
-    }
 
-
-
-}
