@@ -4,17 +4,44 @@
  }
 
  .main-header {
-    background-color: rgb(87, 78, 41);        
+    background-color: rgb(87, 78, 41);   
+    padding: 17px;
  }
 
- .main-header-container {
-    margin: 17px;
+.page-name a {
+     text-shadow: 3px 2px 2px rgb(39, 43, 32);
+     color:  rgb(210, 235, 222);
  }
+
+ .main-nav-bar {
+     padding: 5px 8px;
+     list-style-type: none;
+     text-decoration: none;
+     background-color: rgb(36, 88, 36);
+     border-radius: 5%;
+ }
+
+ li {
+     padding: 2px;
+     font-size: 20px;
+     text-align: center;
+ }
+
+ li a {
+    color: rgb(223, 167, 94);
+ }
+
+ li .about-us {
+     font-size: 24px;
+     color: burlywood;
+ }
+
+ /* Main header navigation links */
 
 
 
 /* you could set a max width header than when the browser
- gets too wide sex the media 
+ gets too wide set the media 
 quiries to have a full screan background image. */
 
 
@@ -23,7 +50,13 @@ quiries to have a full screan background image. */
     .page-name,
     .logo {
         display: flex;
-        margin: auto;
+        flex-wrap: wrap;
+        margin: 8px auto;
+    }
+
+    .main-header,
+    .main-nav-bar {
+        flex-direction: column;
     }
 
 
