@@ -8,10 +8,15 @@
     padding: 17px;
  }
 
+ /* Container for the header. 
+ Contains background image and border properties.  */
+
 .page-name a {
      text-shadow: 3px 2px 2px rgb(39, 43, 32);
      color:  rgb(210, 235, 222);
  }
+
+ /* Main Header Page Title  */
 
  .main-nav-bar {
      padding: 5px 8px;
