@@ -60,6 +60,11 @@
 
  /* Main header navigation links */
 
+ body { 
+     /* width: 100%; */
+     background-color: cadetblue;
+ }
+
 
 
 /* you could set a max width header than when the browser
@@ -86,7 +91,23 @@ quiries to have a full screan background image. */
     .main-nav-bar {
         flex-direction: column;
     }
+    
+    /* Flex-box Properties For Header */
 
+    body {
+        background: radial-gradient(ellipse at top, rgb(87, 78, 41), transparent),
+                    radial-gradient(ellipse at bottom left, burlywood, transparent);
+    }
+
+    .body-container-1 {
+        border: 5px outset black;
+        margin: 30px auto;
+        padding: 20px 20px;
+        /* background-color: cornflowerblue; */
+        width: 450px;
+        background: radial-gradient(ellipse at top, #e66465, transparent),
+            radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    }
 
 @media (min-width: 646px) {
     #header-background {
@@ -115,6 +136,9 @@ quiries to have a full screan background image. */
         text-decoration: none;
     }
 
+    .healthy-self {
+        text-align: center;
+    }
 }
 
 
