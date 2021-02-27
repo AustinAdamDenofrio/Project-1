@@ -1,3 +1,6 @@
+ 
+                                          /* Global Properties */
+ 
  * {
      box-sizing: border-box;
      color: black;
@@ -8,6 +11,11 @@
      font-weight: bold;
  }
 
+
+
+
+                                          /* Main Header Page Title  */
+ 
  #header-background {
     background-color: rgb(87, 78, 41);   
     background-image: url(../img/mount.png);
@@ -16,6 +24,8 @@
     border-radius: 5%;
     border: 5px outset rgb(87, 78, 41);
     height: 383px;
+    margin-left: 20px;
+    margin-right: 20px;
  }
 
  .main-header {
@@ -30,8 +40,8 @@
      color:  rgb(155, 182, 168);
  }
 
- /* Main Header Page Title  */
-
+ 
+/* Main header navigation links */
  .main-nav-bar {
      width: 160px;
      padding: 5px 8px;
@@ -58,12 +68,8 @@
      color: burlywood;
  }
 
- /* Main header navigation links */
 
- body { 
-     /* width: 100%; */
-     background-color: cadetblue;
- }
+
 
 
 
@@ -72,6 +78,73 @@
 quiries to have a full screan background image. */
 
 
+
+                                            /* Body */
+
+
+/* Website Background Color */
+    body {
+        background: radial-gradient(ellipse at top, rgb(87, 78, 41), transparent),
+                    radial-gradient(ellipse at bottom left, burlywood, transparent);
+    }
+    
+
+ 
+/* Sizing for body Containers */
+    .quote-index-pg,
+    .body-container-1,
+    .body-img-1,
+    .body-img-2 {
+        width: 450px;
+        margin: 20px;
+    }
+
+
+
+/* Quotes for the top of the Body*/
+    .quote-index-pg {
+        font-size: 25px;
+        color: honeydew;
+        text-align: center;
+        margin: auto;
+        width: 100vw;
+    }
+
+    .quote-index-pg::first-line {
+        color: gainsboro;
+        font-size: 35px;
+        text-align: center;
+    }
+ 
+/* Text container with the first paragraph and two imgs */
+    .healthy-self {
+        text-align: center;
+    }
+
+    .body-container-1 {
+        border: 5px outset black;
+        /* margin: auto; maybe remove auto after changing to flex container */
+        border-radius: .75%;
+        background-image: url(../img/natural.png);
+    }
+
+    .body-container-1-layer {
+        padding: 20px 20px;
+        height: 580px;
+        background: radial-gradient(ellipse at bottom left, #ad5555, transparent),
+                    radial-gradient(ellipse at top, #2a5803, transparent);
+    }
+
+    .body-img-1,
+    .body-img-2 {
+        display: block;
+        height: auto;
+        width: 450px;
+    }
+
+
+
+    /* Flex-box Properties For Header */    
     .main-header,
     .main-nav-bar,
     .page-name,
@@ -91,75 +164,91 @@ quiries to have a full screan background image. */
     .main-nav-bar {
         flex-direction: column;
     }
-    
-    /* Flex-box Properties For Header */
-
-    body {
-        background: radial-gradient(ellipse at top, rgb(87, 78, 41), transparent),
-                    radial-gradient(ellipse at bottom left, burlywood, transparent);
-    }
-
-    .body-container-1 {
-        border: 5px outset black;
-        margin: 30px auto;
-        padding: 20px 20px;
-        /* background-color: cornflowerblue; */
-        width: 450px;
-        background: radial-gradient(ellipse at top, #e66465, transparent),
-            radial-gradient(ellipse at bottom, #4d9f0c, transparent);
-    }
-
-@media (min-width: 646px) {
-    #header-background {
-        max-width: 910px;
-        margin: auto;
-    }
-
-    .main-header {
-        background-size: auto 502px ;
-        background-position: center;
-    }
-
-    .main-nav-bar {
-        flex-direction: row;
-        padding: 8px 15px;
-        border-radius: 38%;
-        width: 575px;
-    }
-
-    li {
-        padding: 5px 15px;
-        font-size: 24px;
-    }
-
-    li .about-us {
-        text-decoration: none;
-    }
-
-    .healthy-self {
-        text-align: center;
-    }
-}
 
 
-@media (min-width: 1025px) {
-    .main-header {
-        flex-direction: row;
-        background-size: auto;
-        background-position: center;
-        justify-content: center;
-        align-content: flex-start;
-    }
-
-    .main-nav-bar {
-        height: 115px;
-        width: 310px;
-        border-radius: 5%;
+/* Flexbox Properties for Body */
+  .upper-body {
+        display: flex;
         flex-wrap: wrap;
-        /* margin-left: auto; */
+        flex-direction: column;
     }
 
-    li .about-us {
-        text-decoration: underline;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        /* Media Queries */
+
+    @media (min-width: 646px) {
+        #header-background {
+            max-width: 910px;
+            margin: auto;
+        }
+
+        .main-header {
+            background-size: auto 502px ;
+            background-position: center;
+        }
+
+        .main-nav-bar {
+            flex-direction: row;
+            padding: 8px 15px;
+            border-radius: 38%;
+            width: 575px;
+        }
+
+        li {
+            padding: 5px 15px;
+            font-size: 24px;
+        }
+
+        li .about-us {
+            text-decoration: none;
+        }
+
+        .upper-body {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .body-img-1,
+        .body-img-2 {
+            border-radius: 5%;
+        }
     }
-}
+
+
+
+
+
+
+    @media (min-width: 1025px) {
+        .main-header {
+            flex-direction: row;
+            background-size: auto;
+            background-position: center;
+            justify-content: center;
+            align-content: flex-start;
+        }
+
+        .main-nav-bar {
+            height: 115px;
+            width: 310px;
+            border-radius: 5%;
+            flex-wrap: wrap;
+        }
+
+        li .about-us {
+            text-decoration: underline;
+        }
+    }
