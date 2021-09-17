@@ -1,0 +1,28 @@
+#hamburgerBtn{
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: cadetblue;
+}
+nav {background-color: green;}
+nav ul {margin: 0; padding: 0;}
+nav ul li {list-style-type: none;}
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+nav li.active {background-color: chartreuse;}
+nav a:hover {background-color: brown;}
+
+
+/*This is the section that closes the hamberger menu 
+and creates a point for the JS to link to*/
+nav ul.open {display: block;}
+nav ul {display: none;}

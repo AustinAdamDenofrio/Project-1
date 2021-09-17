@@ -1,0 +1,46 @@
+
+
+@media (max-width: 1499px) {
+    .large-screen-header {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1500px) {
+    .main-header,
+    .header-background {
+        display: none;
+    }
+
+    .hamburger-menu {
+        /* navigation div */
+
+
+    }
+
+    .hamburger-menu-ul {
+        /* ul for the navigation bar */
+    }
+
+    .large-screen-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .top-of-pg-header,
+    .hamburger-menu-ul {
+        display: flex;
+    }
+
+    .hamburger-menu-ul {
+        flex-direction: row;
+        margin-right: auto;
+        list-style-type: none;
+    }
+
+
+}
+

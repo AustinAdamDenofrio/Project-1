@@ -16,7 +16,7 @@
 
                                           /* Main Header Page Title  */
  
- #header-background {
+ .header-background {
     background-color: rgb(87, 78, 41);   
     background-image: url(../img/mount.png);
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@ footer {
                                     /* Media Queries */
 
 @media (min-width: 646px) {
-    #header-background {
+    .header-background {
         max-width: 910px;
         margin: auto;
     }
